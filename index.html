@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/friz-quadrata-std" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <img class="logo" src="imagens/riot-logo.png" alt="riot logo">
+        <nav>
+
+            <ul class="nav">
+                <li class="ojogo"><a href="/"> O jogo</a></li>
+                <li class="campeoes"><a href="/"> Campeões</a></li>
+                <li class="noticias"><a href="/"> Notícias</a></li>
+                <li class="notasatt"><a href="/"> Notas das atualizações</a></li>
+                <li class="mais"><a href="/"> Mais</a></li>
+            </ul>
+        </nav>
+        <a class="botao sessão" href="#"><button class="btns"> Iniciar Sessão</button></a>
+        <a class="botao Jogue" href="#"><button class="btnj"> <span> Jogue Agora </span></button></a>
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+
+
+    </header>
+</body>
+
+<div class="conteudo">
+    <img class="mapa" src="imagens/mapa.png" data-speed="5" alt="mapa">
+    <div class="textos">
+        <h3>comece sua</h3>
+        <h1>LENDA</h1>
+        <p>Acabou de chegar ao Lol? Temos um resumo básico do modo de jogo mais jogado.</p>
+        <div class="botoes">
+            <a href="/"><button class="btnc">Começar</button></a>
+            <a href="/"><button class="btng">Jogue de Graça</button></a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('mousemove', parallax);
+        function parallax(e) {
+            this.querySelectorAll('.mapa').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth - e.pageX * speed) / 500;
+                const y = (window.innerHeight - e.pageY * speed) / 500;
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    </script>
+
+
+
+
+</div>
+
+</html>

@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300;1,600;1,700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/friz-quadrata-std");
+
+* {
+  box-sizing: border-box;
+  margin: 0 4px;
+  padding: 0;
+  background-color: #030608;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+span {
+  color: #212529;
+  background: none;
+}
+
+li,
+a,
+button {
+  font-weight: 800;
+  font-size: 14px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header {
+  border-bottom: 0.3px solid #252525;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 1px;
+}
+
+.logo {
+  cursor: pointer;
+  image-rendering: pixelated;
+  max-width: 100px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  filter: contrast(100%);
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav li a {
+  transition: all 0.3s ease 0s;
+  background-color: #030608;
+}
+
+.nav li a:hover {
+  padding: 5px 10px;
+  background-color: #212529;
+  border-radius: 8px;
+}
+
+.btns {
+  background-color: #212529;
+  padding: 5px 18px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btnj {
+  background-color: #0ac3e1ff;
+  padding: 5px 18px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btnj:hover {
+  background-color: #0c869bff;
+}
+
+.textos {
+  color: white;
+  text-transform: capitalize;
+  font-family: "BeaufortW01-Regular", sans-serif;
+}
+
+.btnc {
+  background-color: #d4ab5e;
+  padding: 15px 55px;
+  color: #030608;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btnc:hover {
+  background-color: #967943;
+}
+
+.btng {
+  background-color: #0ac3e1ff;
+  padding: 15px 35px;
+  color: #030608;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btng:hover {
+  background-color: #0c869bff;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Friz Quadrata Std", sans-serif;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.mapa {
+  position: relative;
+  max-width: 660px;
+  margin-top: 50px;
+  margin-left: -50px;
+  overflow: hidden;
+}
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  display: none;
+}
+
+@media (max-width: 1218px) {
+  .mais a {
+    display: none;
+  }
+  .notasatt a {
+    display: none;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1122px) {
+  .conteudo {
+    display: grid;
+  }
+}
+
+@media (max-width: 998px) {
+  .btns {
+    display: none;
+  }
+}
+
+@media (max-width: 822px) {
+  .btnj {
+    display: none;
+  }
+  .mobile-menu div {
+    display: block;
+  }
+}
+
+@media (max-width: 702px) {
+  .noticias a {
+    display: none;
+  }
+
+  .campeoes a {
+    display: none;
+  }
+
+  .ojogo a {
+    display: none;
+  }
+}
+
+@media (max-width: 645px) {
+  .mapa {
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .textos {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin: auto;
+  }
+
+  .btng {
+    display: none;
+  }
+}
+
+@media (max-width: 466px) {
+  .mapa {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .textos {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btng {
+    display: none;
+  }
+}
