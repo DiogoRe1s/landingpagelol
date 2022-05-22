@@ -234,12 +234,14 @@ p {
     width: 100vw;
     display: flex;
     align-items: center;
+    margin: auto;
   }
 
   .textos {
     width: 100vw;
     display: flex;
     align-items: center;
+    margin: auto;
   }
 
   .btng {
